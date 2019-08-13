@@ -75,3 +75,9 @@ make -j${HOWMANY_CORES}
 sudo make install
 rm -rf ~/Downloads/Python${PYTHON_VERSION}*
 echo "Installed! DOOOONE! finally..."
+
+# Choosing the default terminal emulator (#TeamTilix!)
+echo "Now, you will choose the defualt terminal emulator"
+sudo update-alternatives --config x-terminal-emulator
+echo "Done choosing!"
+
