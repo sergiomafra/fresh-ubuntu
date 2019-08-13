@@ -29,8 +29,9 @@ sudo apt install \
     ffmpeg \
     fonts-powerline \
     git \
-    gnome-tweak-tools \
+    gnome-tweak-tool \
     gparted \
+    guake \
     hping3 \
     htop \
     iftop \
