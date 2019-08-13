@@ -1,6 +1,7 @@
 #!/bin/bash
 
 ## VARIABLES
+DOWNLOADS_FOLDER=~/Downloads
 HOWMANY_CORES=$(cat /proc/cpuinfo | grep processor | wc -l)
 PYTHON_VERSION=3.7.4
 USER=$(whoami)
@@ -84,8 +85,12 @@ echo "Done choosing!"
 
 # Installing Oracle VirtualBox
 wget https://download.virtualbox.org/virtualbox/6.0.10/virtualbox-6.0_6.0.10-132072~Ubuntu~bionic_amd64.deb -O ~/Downloads/vbox.deb
-sudo dpkg -i ~/Downloads/vbox.deb
+sudo dpkg -i ${DOWNLOADS_FOLDER}/vbox.deb
 sudo apt install -f
+
+## Installing Telegram Desktop
+wget https://telegram.org/dl/desktop/linux -O ${DOWNLOADS_FOLDER}/telegram.tar.gz
+sudo tar ${DOWNLOADS_FOLDER}/telegram.tar.gz -C /opt
 
 #TODO: Add Arduino and Fritzing apps
 #TODO: Add Skype for linux
@@ -94,3 +99,4 @@ sudo apt install -f
 #TODO: Add Easy Sound Switcher
 #TODO: Download some GitHub projects
 #TODO: Create an interface to choose which programs to install
+#TODO: Add programs to favourites sidebar automatically
