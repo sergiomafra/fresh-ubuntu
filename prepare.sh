@@ -84,3 +84,4 @@ echo "Done choosing!"
 # Installing Oracle VirtualBox
 wget https://download.virtualbox.org/virtualbox/6.0.10/virtualbox-6.0_6.0.10-132072~Ubuntu~bionic_amd64.deb -O ~/Downloads/vbox.deb
 sudo dpkg -i ~/Downloads/vbox.deb
+sudo apt install -f
