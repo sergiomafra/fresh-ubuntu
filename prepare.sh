@@ -23,6 +23,7 @@ sudo apt install \
     bmon \
     build-essentials \
     checkinstall \
+    chrome-gnome-shell
     curl \
     exfat-fuse \
     exfat-utils \
@@ -85,3 +86,11 @@ echo "Done choosing!"
 wget https://download.virtualbox.org/virtualbox/6.0.10/virtualbox-6.0_6.0.10-132072~Ubuntu~bionic_amd64.deb -O ~/Downloads/vbox.deb
 sudo dpkg -i ~/Downloads/vbox.deb
 sudo apt install -f
+
+#TODO: Add Arduino and Fritzing apps
+#TODO: Add Skype for linux
+#TODO: Add Vectr
+#TODO: Add Mouse Sever App
+#TODO: Add Easy Sound Switcher
+#TODO: Download some GitHub projects
+#TODO: Create an interface to choose which programs to install
