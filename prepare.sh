@@ -100,3 +100,7 @@ sudo tar ${DOWNLOADS_FOLDER}/telegram.tar.gz -C /opt
 #TODO: Download some GitHub projects
 #TODO: Create an interface to choose which programs to install
 #TODO: Add programs to favourites sidebar automatically
+
+# Customization
+# Change sign in screen background to black
+sudo sed -i 's/2c001e/000000/' /etc/alternatives/gdm3.css /usr/share/gnome-background-properties/ubuntu-wallpapers.xml
